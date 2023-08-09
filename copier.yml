@@ -1,0 +1,13 @@
+# Questions
+
+project_name:
+  type: str
+  help: What is the name of your project? (your-project)
+
+module:
+  type: str
+  help: What is the name of your module? (github.com/ansipunk/your-project)
+
+_exclude:
+  - "README.md"
+  - "LICENSE.txt"

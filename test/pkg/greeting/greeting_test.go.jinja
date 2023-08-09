@@ -1,0 +1,16 @@
+package greeting_test
+
+import (
+	"testing"
+
+	"{{module}}/pkg/greeting"
+)
+
+func TestGetGreeting(t *testing.T) {
+	got := greeting.GetGreeting("Shrek")
+	want := "Hello, Shrek!"
+
+	if got != want {
+		t.Errorf("got %s, wanted %s", got, want)
+	}
+}

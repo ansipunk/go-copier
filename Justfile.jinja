@@ -1,0 +1,16 @@
+default: tidy lint format test build
+
+tidy:
+  go mod tidy
+
+lint:
+  golangci-lint run ./...
+
+format:
+  go fmt ./...
+
+test:
+  go test ./test/...
+
+build:
+  go build ./cmd/...
